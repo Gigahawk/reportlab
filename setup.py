@@ -825,7 +825,7 @@ def main():
                     ],
             package_dir = PACKAGE_DIR,
             package_data = {'reportlab': reportlab_files},
-            ext_modules =   EXT_MODULES,
+            #ext_modules =   EXT_MODULES,
             classifiers = [
                 'Development Status :: 5 - Production/Stable',
                 'Intended Audience :: Developers',
