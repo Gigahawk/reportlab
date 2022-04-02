@@ -94,7 +94,10 @@ def _packages_path(d):
     if P: return P[0]
 
 package_path = _packages_path('dist-packages') or _packages_path('site-packages')
-package_path = pjoin(package_path, 'reportlab')
+try:
+    package_path = pjoin(package_path, 'reportlab')
+except:
+    package_path = 'reportlab'
 
 def die(msg):
     raise ValueError(msg)
